@@ -9,7 +9,7 @@ const containerVariants = {
       staggerChildren: 0.12,
     },
   },
-};
+} as const;
 
 const itemVariants = {
   hidden: {
@@ -21,10 +21,10 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
-};
+} as const;
 
 export default function About() {
   const shouldReduceMotion = useReducedMotion();
