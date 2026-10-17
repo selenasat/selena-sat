@@ -72,8 +72,8 @@ export default function About() {
 
           <p>
             For me, building for the web is about more than just writing clean
-            code—it's about creating an experience that feels effortless for the
-            user. My toolkit is diverse: I'm especially interested in
+            code—it&apos;s about creating an experience that feels effortless for the
+            user. My toolkit is diverse: I&apos;m especially interested in
             cloud-based AWS solutions and SQL databases, while also enjoying the
             creative side of prototyping interfaces in Figma and exploring AI
             and machine learning.
@@ -81,10 +81,10 @@ export default function About() {
 
           <div className="pt-6">
             <h3 className="text-xl font-medium text-neutral-900 mb-4 italic">
-              The "Offline" Version
+              The &quot;Offline&quot; Version
             </h3>
             <p>
-              If we aren't talking shopping, we’re probably talking food. I’m a
+              If we aren&apos;t talking shopping, we&apos;re probably talking food. I&apos;m a
               food blogger and a dedicated matcha enthusiast who loves the
               process of learning new recipes (the kitchen is basically my
               second sandbox). Most of my downtime is spent with my kid and our
@@ -121,7 +121,7 @@ export default function About() {
         {/* What I'm Interested In */}
         <div className="mt-28 pt-16 border-t border-neutral-200">
           <p className="text-xs uppercase tracking-[0.3em] text-neutral-400 mb-10">
-            What I'm Interested In
+            What I&apos;m Interested In
           </p>
 
           <motion.div

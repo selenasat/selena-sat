@@ -25,6 +25,7 @@ export default function Contact() {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
+          website: formData.get("website"), 
         }),
       });
 
@@ -70,6 +71,21 @@ export default function Contact() {
         {/* Contact Form */}
         <div className="mt-20 max-w-2xl">
           <form className="space-y-8" onSubmit={handleSubmit}>
+            {/* Honeypot field: hidden from real visitors */}
+            <div
+              aria-hidden="true"
+              className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden"
+            >
+              <label htmlFor="website">Leave this field empty</label>
+              <input
+                id="website"
+                name="website"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
+
             <div>
               <label
                 htmlFor="name"

@@ -114,7 +114,7 @@ export default function Projects() {
           </p>
 
           <h2 className="text-5xl md:text-7xl font-semibold tracking-tight">
-            Things I've built.
+            Things I&apos;ve built.
           </h2>
         </div>
 

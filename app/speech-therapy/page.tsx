@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 export default function SpeechTherapy() {
   return (
     <main className="min-h-screen bg-[#f8f6f2] text-[#111111]">
       {/* Header */}
       <header className="px-6 md:px-10 pt-8">
         <div className="max-w-7xl mx-auto">
-          <a
+          <Link
             href="/#projects"
             className="text-sm text-neutral-500 transition-colors hover:text-neutral-900"
           >
             ← Back to projects
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -522,12 +524,12 @@ export default function SpeechTherapy() {
             </h2>
           </div>
 
-          <a
+          <Link
             href="/#projects"
             className="inline-flex w-fit rounded-full bg-white px-6 py-3 text-sm text-neutral-900 transition-transform duration-200 hover:-translate-y-1"
           >
             Back to projects →
-          </a>
+          </Link>
         </div>
       </section>
     </main>
