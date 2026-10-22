@@ -1,101 +1,118 @@
-# Selena Sat's Portfolio Site
+# Selena Sat — Personal Portfolio
 
-A modern frontend developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS.
+**Software builder by trade, designer by choice.**
 
-## About The Project
+Welcome to my personal portfolio! I'm Selena, an early-career software engineer interested in building thoughtful web experiences, full-stack applications, and cloud-based systems. This site showcases selected projects, my development approach, and my journey as an engineer.
 
-This portfolio showcases my projects, frontend development skills, UI/UX interests, and software engineering experience.
+🌐 **Live Portfolio:** [selena-sat.vercel.app](https://selena-sat.vercel.app)  
+💼 **LinkedIn:** [linkedin.com/in/selenasat](https://linkedin.com/in/selenasat)  
+🐙 **GitHub:** [github.com/selenasat](https://github.com/selenasat)
 
-The design direction is inspired by modern editorial-style developer portfolios with a focus on:
+## About the Project
 
-- clean typography
-- responsive layouts
-- smooth user experience
-- modern UI interactions
+I built this portfolio to bring my software engineering work and design interests together in one place. It features responsive layouts, project case studies, subtle motion, and a contact form for professional inquiries.
 
-## Built With
+## Tech Stack
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-
-## Features
-
-- Responsive design
-- Modern editorial-inspired layout
-- Featured project showcase
-- Smooth scrolling navigation
-- Component-based architecture
-
-## Current Status
-
-🚧 Currently in development.
-
-Planned future features:
-
-- Framer Motion animations
-- Smooth scrolling transitions
-- Interactive project showcases
-- Custom UI interactions
-- Creative drawing/scribble mode
-- Deployment on Vercel
+- **Framework:** Next.js, React, TypeScript
+- **Styling:** Tailwind CSS
+- **Animation & Interaction:** Framer Motion, Lenis
+- **Contact Form:** Next.js API route, Resend
+- **Rate Limiting:** Upstash Redis
+- **Deployment:** Vercel
+- **Version Control:** Git and GitHub
 
 ## Featured Projects
 
-### SLP Exercise App
+### 1. Interactive Speech Therapy Web Application
+A collaborative full-stack project designed to support interactive speech therapy exercises and clinician workflows.
 
-Cloud-based speech therapy platform focused on improving communication exercises through interactive web technologies and AI-assisted feedback.
+- Contributed to frontend interactions and the connection between graph interactions and audio data.
+- Worked on responsive interfaces and speech-related application features.
+- Explored the integration of AI-assisted speech analysis.
 
-### CI/CD Pipeline Project
+**Technologies:** React, TypeScript, Node.js, Python, SQLite, Whisper
 
-Automated deployment workflow integrating GitHub Actions and cloud infrastructure concepts.
+[View the Case Study](https://selena-sat.vercel.app/speech-therapy)
 
-### Persona Palette
+*This case study focuses on my contributions and design process while respecting the confidentiality of collaborative work.*
 
-A virtual style consultant leveraging computer vision and automated feature extraction to provide personalized fashion and beauty recommendations.
+### 2. Terraform Serverless Document Processor
+An event-driven cloud project exploring document-processing workflows and infrastructure as code.
 
-### Serverless Document Processor
+- Uses AWS services to explore serverless processing and structured data storage.
+- Uses Terraform to define and manage cloud infrastructure.
+- Includes automated infrastructure validation and a GitHub Actions workflow.
 
-Provisioned an event-driven AWS architecture using Terraform, including S3, Lambda, DynamoDB, SNS, IAM, and CloudWatch.
+**Technologies:** AWS, Lambda, S3, DynamoDB, SNS, Terraform, GitHub Actions
 
-## 🚀 Getting Started
+[View the Repository](https://github.com/selenasat/terraform-serverless-document-processor)
 
-Follow these steps to clone and run this repository locally on your machine.
+### 3. Persona Palette
+A personal project exploring personalized fashion and beauty recommendations through image analysis.
+
+- Explores color-season analysis and visual classification.
+- Combines application development with computer vision and interface design.
+
+**Technologies:** Python, Django, React, React Native, OpenCV, PostgreSQL
+
+[View the Repository](https://github.com/selenasat/PersonaPaletteApp)
+
+## Run Locally
 
 ### Prerequisites
 
-Ensure you have **Node.js** (v18 or higher) and **npm** installed on your machine. You can check your installed versions by running:
-
-```bash
-node -v
-npm -v
-```
+- Node.js and npm
+- Git
 
 ### Installation
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/selenasat/selenasat.github.io.git
+   ```bash
+   git clone https://github.com/selenasat/selena-sat.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd selena-sat
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Environment Variables
+
+The contact form requires environment variables for email delivery and rate limiting. Create a `.env.local` file in the project root and configure the following variables with your own credentials:
+
+```env
+RESEND_API_KEY=
+CONTACT_EMAIL=
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
 ```
 
-2. Navigate into the project directory
+Keep your credentials private. Never commit `.env.local` or real API keys and tokens to GitHub.
 
-```bash
-cd selenasat.github.io
-```
+## Deployment
 
-3. Install project dependencies
+The portfolio is deployed with Vercel and connected to this GitHub repository. Pushes to the configured deployment branch can trigger new deployments.
 
-```bash
-npm install
-```
+## Contact
 
-4. Start the local development server
+Thanks for visiting! Feel free to explore my projects or connect with me.
 
-```bash
-npm run dev
-```
-
-5. Open your browser and visit http://localhost:5173 (or the local URL displayed in your terminal) to view the site.
+- **LinkedIn:** [Selena Sat](https://linkedin.com/in/selenasat)
+- **GitHub:** [selenasat](https://github.com/selenasat)
